@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+.logo > img{
+    width: 85%;
+}
+.m-2{
+    padding: 20px 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    line-height: 40px;
+}
+.title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+}
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #D9D9D9;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 20px;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main1{
+    display: flex;
+    align-items: stretch;
+}
+.col-3{
+    padding: 20px 0;
+    width: 30%;
+    background: #F6F7F7;
+    position: relative;
+}
+.col-7{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 65%;
+    margin-left: 50px;
+}
+
+
+.main{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.panel{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(217, 217, 217, 0.3);
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background: #D9D9D9;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.text__card{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 5px 0;
+}
+.card > h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.pagi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    padding: 30px 0;
+    margin-bottom: 100px;
+}
+.pagi__btn{
+    font-size: 32px;
+}
+.activa__numb{
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 40px;
+    background: #D9D9D9;
+}
+.footer__logo{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 38px;
+}
+.header__title{
+    padding-bottom: 20px;
+    line-height: 34px;
+}
+.btn__footer{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+}
