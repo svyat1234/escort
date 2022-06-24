@@ -132,3 +132,142 @@ a{
     bottom: 0;
     margin-bottom: 50px;
 }
+
+.up{
+    width: 62px;
+    height: 62px;
+    position: fixed;
+    bottom: 12%;
+    left: 20%;
+    background: url("../img/up.svg") no-repeat center / cover;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+    .container{
+        max-width: 1024px;
+    }
+    .card{
+        width: 32%;
+    }
+    .text__card {
+        font-size: 17px;
+    }
+    .panel{
+        margin-top: 58px;
+    }
+    .panel__link{
+        font-size: 19px;
+    }
+    .up{
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        max-width: 768px;
+    }
+    .card{
+        width: 48%;
+    }
+    .panel{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px 22px;
+    }
+    .pagi{
+        width: 30%;
+    }
+    .logo > img{
+        width: 100%;
+    }
+    .up{
+        left: 12%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        max-width: 480px;
+    }
+    .col-3{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .col-7{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 100px;
+    }
+    .main1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo > img{
+        width: 35%;
+        margin-top: 15px;
+    }
+    .panel__block{
+        width: 40px;
+        height: 40px;
+        background: url("../img/burger_menu.png") no-repeat center / cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 40px;
+    }
+    .panel{
+        display: none;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .btn__footer{
+        right: 50%;
+        margin-right: -155px;
+    }
+    .up{
+        bottom: 1%;
+        left: 1%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        max-width: 320px;
+    }
+    .logo > img{
+        width: 50%;
+    }
+    .header__title{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .text__card{
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    .card > h4{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .btn__footer{
+        font-size: 18px;
+    }
+    .pagi__btn{
+        font-size: 20px;
+    }
+    .pagi__num{
+        font-size: 18px;
+    }
+    .pagi{
+        width: 40%;
+    }
+    .up{
+        width: 40px;
+        height: 40px;
+    }
+}
