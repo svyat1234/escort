@@ -13,17 +13,25 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <div class="container ">
+            <div class="header__block block">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="nav">
+                    <input type="text" placeholder="Имя, Описание">
+                    <a href="#" class="link nav__link">Ваш город?</a>
+                </div>
+                <!-- /.nav -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
    <div class="container main1">
         <div class="col-3">
-            <a href="#" class="logo">
-                <img src="img/logo.png" alt="logo">
-            </a>
-
             <a href="./index.html" class="btn btn__back">Назад</a>
-                    
-            <a href="#" class="logo footer__logo">
-                <img src="img/logo.png" alt="logo">
-            </a>
         </div> 
         <div class="col-7">
             <h2 class="header__title">Алина, Г. Москва, ул. Набережная, д25, кв. 1 </h2>
@@ -42,7 +50,7 @@
                     </div>
                     <div class="info__content__block">
                         <h2 class="info__content__title">Цена:</h2>
-                        <span class="info__content__text">1000-50000 рублей</span>
+                        <span class="info__content__text"><span class="color">1000 - 50000</span> рублей</span>
                     </div>
                 </div>
             </div>
@@ -78,26 +86,72 @@
                     <span class="parameters__info">52</span>
                 </div>
                 <!-- /.parameters__block -->
-                <div class="parameters__block">
-                    <span class="parameters__name">Услуги:</span>
-                    <span class="parameters__info">Классический секс, групповой секс, классический фистинг, стриптиз, эротический массаж</span>
-                </div>
-                <!-- /.parameters__block -->
+                
             </div>
             <!-- /.parameters -->
+            <div class="about">
+                <h2 class="about__title">Услуги:</h2>
+                <span class="about__text">Классический секс, групповой секс, классический фистинг, стриптиз, эротический
+                    массаж</span>
+            </div>
+            <!-- /.parameters__block -->
             <div class="about">
                 <h2 class="about__title">О себе:</h2>
                 <span class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id tempora dolorem officia fugit magni ipsa vero consequuntur temporibus labore quia inventore minus vel deleniti similique, illo aliquid maiores numquam!
                 Distinctio quam ipsa consequatur quisquam autem. Ipsa deleniti perspiciatis eius minus tenetur fugiat alias, commodi aliquam temporibus id voluptas ad magnam ea fugit minima ex vitae in quibusdam eveniet ducimus!</span>
             </div>
             <!-- /.about -->
+            
             <h2 class="info__title">Я на карте:</h2>
             <div class="map">
-                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8980.978275127316!2d37.61065649378931!3d55.75425358733195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5c6ae39171%3A0x95bf7ced8fea5cc1!2z0JrQuNGC0LDQuS3Qs9C-0YDQvtC0LCDQnNC-0YHQutCy0LA!5e0!3m2!1sru!2sru!4v1656174363940!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+            <div style="width: auto;height: 400px" id="map970a7gva"></div>
+            <script>function YandexReadyHandler970a7gva() {
+                    var map = new ymaps.Map("map970a7gva", {
+                        center: [55.59413333691615, 38.39685820834704],
+                        zoom: 10,
+                        controls: ["zoomControl", "typeSelector"],
+                        type: "yandex#map"
+                    }, {
+                        suppressMapOpenBlock: true
+                    });
+                    map.geoObjects.add(new ymaps.GeoObject({
+                        geometry: {
+                            type: "Point",
+                            coordinates: [55.59160589303432, 38.30255888495588],
+                            hideIconOnBalloonOpen: false
+                        },
+                        properties: {
+                            balloonContent: decodeURIComponent("%3Cp%3E%D0%AF%20%D0%B7%D0%B4%D0%B5%D1%81%D1%8C%3C%2Fp%3E"),
+                            iconCaption: decodeURIComponent("%D0%AF%20%D0%B7%D0%B4%D0%B5%D1%81%D1%8C"),
+                            hintCaption: decodeURIComponent("%D0%AF%20%D0%B7%D0%B4%D0%B5%D1%81%D1%8C"),
+                        }
+                    }, {
+                        preset: "islands#blackDotIconWithCaption",
+                    })
+                    ); return map;
+                }</script>
+            <script src="//api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru&onload=YandexReadyHandler970a7gva"
+                type="text/javascript"></script>
+            <div style="text-align: right;"><a href="https://maps-creator.com" target="_blank"
+                    style="color: #ccc; font: 13px Arial, Helvetica, sans-serif;">создано с помощью конструктора
+                    maps-creator.com</a></div>
+            <!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
             </div>
-            <button class="btn btn__footer">ВХОД В ЛИЧНЫЙ КАБИНЕТ</button>
         </div>
         <div class="up"></div>
    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="block footer__block">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <a href="#" class="btn btn__footer">ВХОД В ЛИЧНЫЙ КАБИНЕТ</a>
+            </div>
+            <!-- /.block footer__block -->
+        </div>
+        <!-- /.container -->
+    </footer>
 </body>
 </html>

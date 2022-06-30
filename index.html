@@ -10,93 +10,281 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/render.js" defer></script>
     <script src="js/main.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <div class="container ">
+            <div class="header__block block">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <div class="nav">
+                    <input type="text" placeholder="Имя, Описание">
+                    <a href="#" class="link nav__link">Ваш город?</a>
+                </div>
+                <!-- /.nav -->
+            </div>
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
    <div class="container main1">
-        <div class="col-3">
-                    <a href="#" class="logo">
-                        <img src="img/logo.png" alt="logo">
-                    </a>
-                    <div class="panel__block">
-                        <div class="panel">
-                            <h4 class="panel__title title">Разделы</h4>
-    
-                            <a href="#" class="link panel__link">Район</a>
-                            <a href="#" class="link panel__link">Округ</a>
-                            <a href="#" class="link panel__link">Метро</a>
-                            <a href="#" class="link panel__link">Услуги</a>
-                            <a href="#" class="link panel__link">Цена</a>
-                            <a href="#" class="link panel__link">Возвраст</a>
-                            <a href="#" class="link panel__link">Вес</a>
-                            <a href="#" class="link panel__link">Грудь</a>
-                            <a href="#" class="link panel__link">Рост</a>
-                            <a href="#" class="link panel__link">Волосы</a>
-                            <a href="#" class="link panel__link">Национальность</a>
-                            <a href="#" class="link panel__link">Дополнительно</a>
+        <div class="col-3">                   
+            <div class="panel__block">
+                <div class="panel">
+                    <h4 class="panel__title title">Разделы</h4>
+                    <div class="panel__box">
+                        <a href="#" class="link panel__link">Город</a>
+                        <div class="panel__list">
+                            <ul>
+                                <li>Москва</li>
+                                <li>Химки</li>
+                                <li>Раменское</li>
+                            </ul>
                         </div>
-                        <!-- /.panel -->
-                    </div>
-                    <!-- /.panel__block -->
-                    <a href="#" class="logo footer__logo">
-                        <img src="img/logo.png" alt="logo">
-                    </a>
-              
+                        </div>
+                        <!-- города -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Районы</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>ВАО</li>
+                                    <li>ЗАО</li>
+                                    <li>Зеленоградский</li>
+                                    <li>Новомосковский</li>
+                                    <li>СВАО</li>
+                                    <li>СЗАО</li>
+                                    <li>ЮЗАО</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- районы -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Метро</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>                                        
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Балтийская</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Балтийская</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Балтийская</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Балтийская</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Балтийская</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                    <li>Балтийская</li>
+                                    <li>Авиамоторная</li>
+                                    <li>Автозаводская</li>
+                                    <li>Багратионовская</li>
+                                    <li>Баковка</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- метро -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Услуги</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li><h4>ОСНОВНЫЕ</h4></li>
+                                    <li>Классический секс</li>
+                                    <li>Анальный секс</li>
+                                    <li>Групповой секс</li>
+                                    <li>Лесби</li>
+                                    <li>Минет в презервативе</li>
+                                    <li>Минет без презерватива</li>
+                                    <li>Минет глубокий</li>
+                                    <li>Минет в авто</li>
+                                    <li>Куннилингус</li>
+                                    <li>Двойное проникновение</li>
+                                    <li>Игрушки</li>
+                                    <li>Фетиш</li>
+
+                                    <li><h4>ЭКСТРИМ</h4></li>
+                                    <li>Золотой дождь выдача</li>
+                                    <li>Золотой дождь прием</li>
+                                    <li>Страпон</li>                                        
+                                    <li>Фистинг классический</li>
+                                    <li>Фистинг анальный</li>
+                                    <li>Анилингус</li>  
+                                    <li>Бандаж</li>                                      
+                                    <li>Бдсм</li>
+                                    <li>Госпожа</li>
+                                    <li>Рабыня</li>
+                                    <li>Ролевые игры</li>
+                                    
+                                    <li><h4>ДОПОЛНИТЕЛЬНО</h4></li>
+                                    <li>Стриптиз</li>     
+                                    <li>Эротический массаж</li>   
+                                    <li>Эскорт</li>    
+                                    <li>Семейным парам</li>
+                                    <li>Копро</li>                            
+                                    <li>Окончание на лицо</li>
+                                    <li>Окончание в рот</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- услуги -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Волосы</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Блондинки</li>
+                                    <li>Брюнетки</li>
+                                    <li>Рыжие</li>
+                                    <li>Шатенки</li>
+                                    <li>Русые</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- волосы -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Национальность</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Русские</li>
+                                    <li>Украинки</li>
+                                    <li>Узбечки</li>
+                                    <li>Армянки</li>
+                                    <li>Азиатки</li>
+                                    <li>Негритянки</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Национальность -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Возвраст</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Юные</li>
+                                    <li>Молодые</li>
+                                    <li>Опытные</li>
+                                    <li>Взрослые</li>
+                                    <li>Зрелые</li>
+                                    <li>Старые</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Возвраст -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Рост</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Миниатюрные</li>
+                                    <li>Среднего роста</li>
+                                    <li>Высокие</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Рост -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Вес</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Худые</li>
+                                    <li>Толстые</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Вес -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Грудь</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>С большой грудью</li>
+                                    <li>С маленькой грудь</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Грудь -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Цена</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Дешевые</li>
+                                    <li>Недорогие</li>
+                                    <li>Дорогие</li>
+                                    <li>Элитные</li>
+                                    <li>VIP</li>
+                                    <li>Модели</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Цена -->
+                        <div class="panel__box">
+                            <a href="#" class="link panel__link">Остальное</a>
+                            <div class="panel__list">
+                                <ul>
+                                    <li>Проверенные</li>
+                                    <li>На выезд</li>                                            
+                                    <li>Есть видео</li>
+                                    <li>Новые</li>
+                                    <li>В апартаментах</li>
+                                    <li>На час</li>
+                                    <li>На ночь</li>
+                                    <li>Трансы</li>
+                                    <li>Без ретуши</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Остальное -->
+                        <div class="panel__close"></div>
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.panel__block -->                        
         </div> 
         <div class="col-7">
-            <h2 class="header__title">Все эскортницы Москвы: салоны и индивидуалки</h2>
             <div class="catalog">
                 <div class="cards block">
-                    <div class="card">
-                        <img src="img/girl.png" alt="girl">
-                        <h4 class="title text__card">Алина</h4>
-                        <p class="text__card">+799999999</p>
-                        <p class="text__card">Г. Москва, ул.Набережна</p>
-                        <p class="text__card">5000-15000 рублей</p>
-                    </div>
-                    <!-- /.card -->
-                    <div class="card">
-                        <img src="img/girl.png" alt="girl">
-                        <h4 class="title text__card">Алина</h4>
-                        <p class="text__card">+799999999</p>
-                        <p class="text__card">Г. Москва, ул.Набережна</p>
-                        <p class="text__card">5000-15000 рублей</p>
-                    </div>
-                    <!-- /.card -->
-                    <div class="card">
-                        <img src="img/girl.png" alt="girl">
-                        <h4 class="title text__card">Алина</h4>
-                        <p class="text__card">+799999999</p>
-                        <p class="text__card">Г. Москва, ул.Набережна</p>
-                        <p class="text__card">5000-15000 рублей</p>
-                    </div>
-                    <!-- /.card -->
-                    <div class="card">
-                        <img src="img/girl.png" alt="girl">
-                        <h4 class="title text__card">Алина</h4>
-                        <p class="text__card">+799999999</p>
-                        <p class="text__card">Г. Москва, ул.Набережна</p>
-                        <p class="text__card">5000-15000 рублей</p>
-                    </div>
-                    <!-- /.card -->
-                    <div class="card">
-                        <img src="img/girl.png" alt="girl">
-                        <h4 class="title text__card">Алина</h4>
-                        <p class="text__card">+799999999</p>
-                        <p class="text__card">Г. Москва, ул.Набережна</p>
-                        <p class="text__card">5000-15000 рублей</p>
-                    </div>
-                    <!-- /.card -->
-                    <div class="card">
-                        <img src="img/girl.png" alt="girl">
-                        <h4 class="title text__card">Алина</h4>
-                        <p class="text__card">+799999999</p>
-                        <p class="text__card">Г. Москва, ул.Набережна</p>
-                        <p class="text__card">5000-15000 рублей</p>
-                    </div>
-                    <!-- /.card -->
+                    
                 </div>
                 <!-- /.cards col-8 -->
+                <div class="text">
+                    <p>Подбор проституток в Москве
+                    Рады приветствовать на нашем сайте интимных развлечений, где свои анкеты разместили только лучшие проститутки Москвы. У
+                    нас исключительно проверенные предложения от столичных ночных бабочек. Каждое объявление содержит всю необходимую
+                    информацию, которая может потребоваться клиентам путан:</p>
+                    <p>
+                        <ul>
+                            <li>фотографии;</li>
+                            <li>видеоматериалы;</li>
+                            <li>параметры внешности путаны;</li>
+                            <li>стоимость интим услуг.</li>
+                        </ul>
+                    </p>
+                    
+                    <p>
+                    Мы сделали все, чтобы каждый наш посетитель смог быстро и удобно отыскать себе именно ту куртизанку, которая будет
+                    максимально соответствовать всем его пожеланиям. Специально для этого был создан удобный поисковик, который
+                    автоматически сортирует анкеты малышек с учетом пожеланий посетителя.</p>
+                </div>
                 <div class="pagi">
                     <a href="#" class="pagi__btn"><</a>
                             <a href="#" class="pagi__num">1</a>
@@ -108,9 +296,23 @@
                 <!-- /.pagi -->
             </div>
             <!-- /.catalog -->
-            <button class="btn btn__footer">ВХОД В ЛИЧНЫЙ КАБИНЕТ</button>
+            
         </div>
-        <div class="up"></div>
+        
    </div>
+   <footer class="footer">
+    <div class="container">
+        <div class="block footer__block">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <a href="#" class="btn btn__footer">ВХОД В ЛИЧНЫЙ КАБИНЕТ</a>
+        </div>
+        <!-- /.block footer__block -->
+    </div>
+    <!-- /.container -->
+   </footer>
+   <!-- /.footer -->
+<div class="up"></div>
 </body>
 </html>
